@@ -1,9 +1,13 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Boot from "../src/components/boot.jsx";
 
 function App() {
   return (
     <>
-      <h2>Shehroz hassan</h2>
+      <header>
+        <Boot />
+      </header>
     </>
   );
 }
