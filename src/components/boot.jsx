@@ -222,7 +222,7 @@ const Boot = () => {
                     <div className=" features-card d-xl-flex d-lg-flex  ">
                         <div className="feature-card col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12 me-3">
                             <img src={iconImg} alt="Featured Icon 1" className="mb-3" />
-                            <h3 className="fw-bold">Title Goes Here</h3>
+                            <h3 className="fw-bold">Title Goes Here sddcdf</h3>
                             <h6 className="text-muted">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             </h6>
