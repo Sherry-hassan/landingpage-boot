@@ -95,6 +95,7 @@ html,body{
 }
 .hero-img {
     margin-top: 101px;
+    /* margin-left: 45px; */
 }
 .features-text{
     display: flex;
@@ -130,7 +131,7 @@ html,body{
 }
 .info-card {
     padding-top: 150px ;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 /* .info-img img {
@@ -309,5 +310,14 @@ html,body{
     display: flex;
     align-items: center;
     gap: 0.8rem;
+}
+@media (max-width: 568px){
+
+.hero-section{
+    margin-top: 100px;
+}
+.navbar-container{
+    width: 570px;
+}
 }
 
