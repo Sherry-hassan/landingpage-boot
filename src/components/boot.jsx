@@ -38,10 +38,6 @@ const cardData = [
 ];
 
 const Boot = () => {
-    // const [expanded, setExpanded] = useState(false);
-
-    // const handleToggle = () => {
-    //     setExpanded(!expanded);
 
     const [expanded, setExpanded] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -59,45 +55,12 @@ const Boot = () => {
     };
     return (
         <>
-            {/* <Navbar
-                expand={false}
-                className="container col-12 d-flex justify-content-between align-items-center"
-                expanded={expanded}
-            >
-                <Navbar.Brand href="#" className="fw-bold">
-                    Logo
-                </Navbar.Brand>
-                <Navbar.Toggle
-                    aria-controls="basic-navbar-nav"
-                    onClick={handleToggle}
-                    className="border-0"
-                    style={{ marginRight: "1rem" }}
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </Navbar.Toggle>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#">Home</Nav.Link>
-                        <Nav.Link href="#">About</Nav.Link>
-                        <Nav.Link href="#">Contact</Nav.Link>
-                    </Nav>
-                    <div className="d-flex flex-column flex-lg-row gap-2">
-                        <Button variant="primary" className="buy-now">
-                            Purchase Item
-                        </Button>
-                        <Button variant="secondary" className="buy-now">
-                            Login
-                        </Button>
-                    </div>
-                </Navbar.Collapse>
-            </Navbar> */}
-            {/* Navbar */}
             <Navbar
                 expand={false}
                 className="container navbar-container col-12 d-flex justify-content-between align-items-center"
                 expanded={expanded}
             >
-                <Navbar.Brand href="#" className="fw-bold">
+                <Navbar.Brand href="#" className="fw-bold ms-4">
                     Logo
                 </Navbar.Brand>
 
@@ -208,7 +171,7 @@ const Boot = () => {
             </div >
             <div className="container card-container d-xl-flex d-lg-flex">
                 <div className="row features-section">
-                    {/* Text Section */}
+
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  features-text ">
                         <h2 className="fw-bold mb-4">Light, Fast & Powerful</h2>
                         <h6 className="text-muted">
@@ -222,7 +185,7 @@ const Boot = () => {
                     <div className=" features-card d-xl-flex d-lg-flex  ">
                         <div className="feature-card col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12 me-3">
                             <img src={iconImg} alt="Featured Icon 1" className="mb-3" />
-                            <h3 className="fw-bold">Title Goes Here sddcdf</h3>
+                            <h3 className="fw-bold">Title Goes Here</h3>
                             <h6 className="text-muted">
                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                             </h6>
@@ -244,7 +207,6 @@ const Boot = () => {
                     </div>
                 </div>
             </div>
-
             <div className="container">
                 <div className="row g-4 info-container">
                     {cardData.map((card) => (

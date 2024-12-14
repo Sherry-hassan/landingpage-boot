@@ -312,12 +312,27 @@ html,body{
     gap: 0.8rem;
 }
 @media (max-width: 568px){
-
+    header {
+        height: 740px;
+        width: 567px;
+        background-image: url('../assets/images/Path.png');
+        background-repeat: no-repeat;
+        background-position:  right;
+        background-attachment: fixed;
+      }
 .hero-section{
     margin-top: 100px;
 }
 .navbar-container{
     width: 570px;
+}
+.features-text h2{
+    text-align: center;
+}
+.info-img img{
+  margin-left: 45px;
+  margin-top: -70px;
+  margin-bottom: 30px;
 }
 }
 
