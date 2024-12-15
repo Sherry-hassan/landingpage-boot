@@ -73,7 +73,7 @@ const Boot = () => {
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
 
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse className='navbar-collapse' id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#">Home</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
@@ -90,7 +90,7 @@ const Boot = () => {
                 </Navbar.Collapse>
             </Navbar>
 
-            {/* Modal */}
+
             <Modal show={showModal} onHide={handleCloseModal} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Purchase Description</Modal.Title>
@@ -159,12 +159,12 @@ const Boot = () => {
                         <p className="text-muted">
                             mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                         </p>
-                        <div className=" hero-button gap-3">
+                        <div className=" hero-button  gap-3">
                             <button className=" purchase-btn">Purchase UI Kit</button>
                             <button className=" light-button">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-lg-4 col-md-12  col-sm-12 col-xs-12  d-none d-md-block  img-container text-center">
+                    <div className="col-xl-4 col-lg-4 col-md-12  col-sm-12 col-xs-12  d-none d-md-block  img-container ">
                         <img src={groupImg} alt="Hero" className="img-fluid hero-img" />
                     </div>
                 </div>
