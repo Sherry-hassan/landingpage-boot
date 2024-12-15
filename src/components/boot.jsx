@@ -38,10 +38,6 @@ const cardData = [
 ];
 
 const Boot = () => {
-    // const [expanded, setExpanded] = useState(false);
-
-    // const handleToggle = () => {
-    //     setExpanded(!expanded);
 
     const [expanded, setExpanded] = useState(false);
     const [showModal, setShowModal] = useState(false);
@@ -59,45 +55,12 @@ const Boot = () => {
     };
     return (
         <>
-            {/* <Navbar
-                expand={false}
-                className="container col-12 d-flex justify-content-between align-items-center"
-                expanded={expanded}
-            >
-                <Navbar.Brand href="#" className="fw-bold">
-                    Logo
-                </Navbar.Brand>
-                <Navbar.Toggle
-                    aria-controls="basic-navbar-nav"
-                    onClick={handleToggle}
-                    className="border-0"
-                    style={{ marginRight: "1rem" }}
-                >
-                    <span className="navbar-toggler-icon"></span>
-                </Navbar.Toggle>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#">Home</Nav.Link>
-                        <Nav.Link href="#">About</Nav.Link>
-                        <Nav.Link href="#">Contact</Nav.Link>
-                    </Nav>
-                    <div className="d-flex flex-column flex-lg-row gap-2">
-                        <Button variant="primary" className="buy-now">
-                            Purchase Item
-                        </Button>
-                        <Button variant="secondary" className="buy-now">
-                            Login
-                        </Button>
-                    </div>
-                </Navbar.Collapse>
-            </Navbar> */}
-            {/* Navbar */}
             <Navbar
                 expand={false}
                 className="container navbar-container col-12 d-flex justify-content-between align-items-center"
                 expanded={expanded}
             >
-                <Navbar.Brand href="#" className="fw-bold">
+                <Navbar.Brand href="#" className="fw-bold ms-4">
                     Logo
                 </Navbar.Brand>
 
@@ -110,7 +73,7 @@ const Boot = () => {
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
 
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse className='navbar-collapse' id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#">Home</Nav.Link>
                         <Nav.Link href="#">About</Nav.Link>
@@ -127,7 +90,7 @@ const Boot = () => {
                 </Navbar.Collapse>
             </Navbar>
 
-            {/* Modal */}
+
             <Modal show={showModal} onHide={handleCloseModal} centered>
                 <Modal.Header closeButton>
                     <Modal.Title>Purchase Description</Modal.Title>
@@ -196,19 +159,19 @@ const Boot = () => {
                         <p className="text-muted">
                             mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                         </p>
-                        <div className=" hero-button gap-3">
+                        <div className=" hero-button  gap-3">
                             <button className=" purchase-btn">Purchase UI Kit</button>
                             <button className=" light-button">Learn More</button>
                         </div>
                     </div>
-                    <div className="col-xl-4 col-lg-4 col-md-12  col-sm-12 col-xs-12  d-none d-md-block  img-container text-center">
-                        <img src={groupImg} alt="Hero" className="img-fluid hero-img" />
+                    <div className="col-xl-4 col-lg-4 col-md-12  col-sm-12 col-xs-12  d-none d-md-block  img-container ">
+                        <img src={groupImg} alt="Hero" className="img-fluid  hero-img" />
                     </div>
                 </div>
             </div >
             <div className="container card-container d-xl-flex d-lg-flex">
                 <div className="row features-section">
-                    {/* Text Section */}
+
                     <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  features-text ">
                         <h2 className="fw-bold mb-4">Light, Fast & Powerful</h2>
                         <h6 className="text-muted">
@@ -244,7 +207,6 @@ const Boot = () => {
                     </div>
                 </div>
             </div>
-
             <div className="container">
                 <div className="row g-4 info-container">
                     {cardData.map((card) => (
@@ -256,7 +218,7 @@ const Boot = () => {
 
                                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-sm-3 col-12">
                                         <div className="info-img me-5">
-                                            <img src={card.img} alt={`Card ${card.id}`} className="card-img-top img-fluid" />
+                                            <img src={card.img} alt={`Card ${card.id}`} className="card-img-top ms-sm-5 img-fluid" />
                                         </div>
                                     </div>
                                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
