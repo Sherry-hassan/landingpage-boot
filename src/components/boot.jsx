@@ -165,7 +165,7 @@ const Boot = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-12  col-sm-12 col-xs-12  d-none d-md-block  img-container ">
-                        <img src={groupImg} alt="Hero" className="img-fluid hero-img" />
+                        <img src={groupImg} alt="Hero" className="img-fluid  hero-img" />
                     </div>
                 </div>
             </div >
@@ -218,7 +218,7 @@ const Boot = () => {
 
                                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-sm-3 col-12">
                                         <div className="info-img me-5">
-                                            <img src={card.img} alt={`Card ${card.id}`} className="card-img-top img-fluid" />
+                                            <img src={card.img} alt={`Card ${card.id}`} className="card-img-top ms-sm-5 img-fluid" />
                                         </div>
                                     </div>
                                     <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
